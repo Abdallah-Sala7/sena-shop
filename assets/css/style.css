@@ -1,0 +1,96 @@
+header{
+  background: url(../images/bg-1.webp) center / cover no-repeat;
+  padding: 250px 0;
+  z-index: 1;
+  position: relative;
+}
+
+header::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+header .header-contint{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .header-contint .header-title{
+  color: var(--white);
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+/********************product***********************/
+
+.product{
+  padding: 100px 0;
+  background-color: var(--light-gray);
+}
+
+.product .product-contint{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.product .product-contint .product-item{
+  width: 27%;
+}
+
+.product .product-contint .product-item .product-top{
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.product .product-contint .product-item .product-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.product .product-contint .product-item .product-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.product .product-contint .product-item .product-body .product-title{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: var(--dark);
+  text-transform: capitalize;
+}
+
+.product .product-contint .product-item .product-body .product-price{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--dark-gray);
+}
+
+.product .product-contint .product-item .product-body .rate{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.product .product-contint .product-item .product-body .rate img{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: var(--gold-img) drop-shadow(0px -2px 0px rgba(0, 0, 0, 0.5));
+  opacity: 0.5;
+}

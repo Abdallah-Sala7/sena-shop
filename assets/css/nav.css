@@ -1,0 +1,85 @@
+nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+nav .nav-contint{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 0;
+}
+
+nav .nav-contint .brand-logo{
+  width: 130px;
+  height: 30px;
+}
+
+nav .nav-contint .brand-logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.nav-menu{
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar .nav-item .nav-link{
+  color: var(--white);
+  font-size: .85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+}
+
+.navbar .nav-item:hover .nav-link{
+  color: var(--primary);
+}
+
+.nav-tools {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-tools .tool-link{
+  width: 25px;
+  height: 25px;
+  position: relative;
+}
+
+.nav-tools .tool-link:first-of-type::after{
+  content: attr(data-count);
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 17px;
+  height: 17px;
+  background: var(--primary);
+  color: var(--white);
+  font-size: .65rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.nav-tools .tool-link img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: var(--white-img);
+}
