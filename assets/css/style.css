@@ -33,11 +33,72 @@ header .header-contint .header-title{
   background-color: var(--light-gray);
 }
 
+.product .product-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.product .product-head .product-info{
+  font-size: .85rem;
+  color: var(--dark-gray);
+  font-weight: 300;
+}
+
+.product .product-head .product-info span{
+  color: var(--dark);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.product .product-head .product-selction{
+  width: 130px;
+  height: 35px;
+  position: relative;
+}
+
+.product .product-head .product-selction select{
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 10px 30px 10px 10px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.product .product-head .product-selction .slect-dowen{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  pointer-events: none;
+  transition: 0.3s transform ease-in-out;
+}
+
+.product .product-head .product-selction select:focus-visible + .slect-dowen{
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.product .product-head .product-selction .slect-dowen img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: var(--dark-gray-img);
+}
+
+.product .product-head select option{
+  padding: 10px 20px;
+}
+
 .product .product-contint{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  row-gap: 30px;
   flex-wrap: wrap;
 }
 
